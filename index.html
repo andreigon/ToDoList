@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todo.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="todo.js"> </script>
+    <title>Vanilla to do</title>
+</head>
+<body>
+    <div id="todo">
+        <h1>Мои Дела</h1>
+        <div class="todo_input">
+            <input type="text" placeholder="Что будем делать?"> <button class="input">Сделаем</button>
+            <span class="todo_add"></span>
+        </div>
+        <select class="todo_options">
+            <option value="active">Активные</option>
+            <option value="complited">Завершенные</option>
+            <option value="deleted">Удаленные</option>
+        </select>
+        <ul class="todo_items" data-todo-opton="active"></ul>
+        <!-- <div class="buttons">
+            <button class="save">Сохранить</button>
+            <button class="clear">отчистить</button>
+            <button class="delet">Удалить</button>
+        </div> -->
+    </div>
+    <li class="todo_item" data-todo-state="active">
+        <span class="todo_task">Текст задачи</span>
+        <span class="todo_action todo_action_restore" data-todo-action="active"></span>
+        <span class="todo_action todo_action_complete" data-todo-action="complited"></span>
+        <span class="todo_action todo_action_delete" data-todo-action="deleted"></span>
+    </li>
+        
+</body>
+</html>
