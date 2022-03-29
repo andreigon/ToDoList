@@ -1,0 +1,103 @@
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background: radial-gradient(#91EAE4, #86A8E7, #7F7FD5);
+}
+.todo{
+     /* display: block;  
+     /* position: relative; */
+     text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    /* margin: 100px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+ .input{
+    align-items: center;
+    justify-items: center;
+    border: none;
+    position: relative; 
+    border-radius: 15px;
+    height: 70px;
+    width: 100px;
+    font-size: 19px;
+    margin-left: 15px;
+    padding: 0px;
+    
+}
+.todos{
+    display: block;
+    /* background: chocolate; */
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+.todos li{
+    cursor: pointer;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    list-style: none;
+}
+.text{
+    border: none;
+    border-radius: 15px;
+    height: 70px;
+    width: 500px;
+    font-size: 19px;
+    margin-top: 30px;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    /* display: block; */
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border: none;
+    font-size: 55px;
+    height: 100%;
+    width: 100%;
+    text-shadow:6px 6px 2px #718ea7;
+    /* background-color: burlywood; */
+} 
+.edit{
+    border-radius: none;
+    border: none;
+}
+.save{
+    border-radius: none;
+    border: none;
+}
+ /* .buttons{
+    border-radius: none;
+    
+    
+    border: none;
+    
+
+}  */
+ .contact{
+    border: none;
+    margin-bottom: 5px;
+    height: 70px;
+} 
+button:hover{
+background: rgb(77, 174, 227);
+color: rgb(0, 0, 0);
+}
+.trash{
+    background-image: shortcut icon;
+}
+
+
+/* @media screen and (max-height: 450px) {
+    #todo {
+        width: 100%;
+        height: 100%;
+    }
+} */
