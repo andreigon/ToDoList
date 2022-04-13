@@ -3,6 +3,8 @@ body{
     min-width: 100%;
     min-height: 100%;
     background: radial-gradient(#91EAE4, #86A8E7, #7F7FD5);
+    margin: 0px;
+    padding: 0px;
 }
 .todo{
      /* display: block;  

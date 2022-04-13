@@ -1,6 +1,7 @@
 const addTaskBtn = document.querySelector('.input');
 const taskInput = document.querySelector('.text');
 const todosHolder = document.querySelector('.todos');
+const delAllTask = document.querySelector('.deletALL')
 
 let tasks;
 !localStorage.tasks ? tasks=[] : tasks=JSON.parse(localStorage.getItem('tasks'))
@@ -54,6 +55,16 @@ const completeTask = index => {
   updateHTML();
 }
 
+// delAllTask.addEventListener('click',()=>{
+//   localStorage.clear();
+//    updateStorage();
+//   updateHTML();
+//   taskInput.value ='';
+// })
+// updateStorage();
+// updateHTML();
+
+
 addTaskBtn.addEventListener('click',() =>{
   tasks.push(new Task(taskInput.value));
   updateStorage();
@@ -69,3 +80,4 @@ const deleteTask = index => {
     updateHTML() ;
   },1000)
 }
+
